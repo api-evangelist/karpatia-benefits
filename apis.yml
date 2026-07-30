@@ -1,8 +1,24 @@
 aid: karpatia-benefits
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/karpatia-benefits.png
 name: Karpatia Benefits
-description: Karpatia Benefits is a company surfaced as a portfolio company of 500-global and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Karpatia Benefits is an all-in-one corporate employee-benefits management platform used
+  by 100+ companies to administer insurance, sports and education allowances, and mental-health support
+  for distributed teams. It combines a benefits marketplace of 40+ partner vendors offering corporate
+  discounts, reimbursement processing, and HR analytics dashboards, and says it removes roughly 95%
+  of the administrative work of running a benefits program. The company primarily serves Ukrainian
+  companies with multi-country localization. Backed by 500 Global. No public developer API is
+  published at this time.
 url: https://raw.githubusercontent.com/api-evangelist/karpatia-benefits/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Employee Benefits
+- Human Resources
+- HR Tech
+- Insurance
+- Benefits Marketplace
+- Reimbursement
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/karpatia-benefits-domain-security.yml
 - type: Website
   url: https://karpatia.tech
+- type: PrivacyPolicy
+  url: https://drive.google.com/file/d/1pMvJ0H4zxFxfXXAW1Mz9F26PGgvGOuaz/view
+- type: Demo
+  url: https://calendly.com/hi-karpatia/demo
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
